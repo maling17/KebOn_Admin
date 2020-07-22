@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:src="@drawable/logo_kres" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/your_one_stop_ngardening_solution"
+            android:textColor="@color/colorOrange"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:paddingHorizontal="52dp">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/btn_tambah"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_round_cream"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_add" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/tambah_produk"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/btn_lihat_produk"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_round_cream"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_garden_scissors" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/lihat_produk"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:paddingHorizontal="52dp">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/btn_konfirmasi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_round_cream"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_pay" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="@string/konfirmasi_pembayaran"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/btn_perkembangan"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/btn_round_cream"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_plant_pot" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/rubik_medium"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/perkembangan_n_tanaman"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
